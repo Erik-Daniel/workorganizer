@@ -1,0 +1,58 @@
+.container {
+    width: 25vw;
+    height: 90vh;
+    border-radius: 15px;
+    background-color: gray;
+    text-align: center;
+
+}
+.todoObject {
+    background-color: red;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.item {
+    width: 80%;
+    height: 15vh;
+    background-color: lightblue;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+
+}
+.header {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+img {
+    width: 2vw;
+    height: 2vw;
+}
+img:hover {
+    cursor: pointer;
+}
+
+.inputBar {
+    animation: inputBarAnimation;
+    animation-duration: 3s;
+}
+
+
+@keyframes inputBarAnimation {
+     
+}
