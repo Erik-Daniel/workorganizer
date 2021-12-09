@@ -139,14 +139,31 @@ function App() {
    
   }
   function addInputBar(name){
+    
     let newObject = {
       Todo: inputBar.Todo,
       Doing: inputBar.Doing,
       Completed: inputBar.Completed
     }
+    if(name === "Todo"){
+     newObject.Todo = !newObject.Todo;
+     newObject.Doing = false;
+     newObject.Completed = false; 
+    }
     
-    newObject[name] = !newObject[name];
-    
+    else if(name === "Doing"){
+      newObject.Todo = false;
+      newObject.Doing = !newObject.Doing;
+      newObject.Completed = false; 
+     }
+     else if(name === "Completed"){
+      newObject.Todo = false;
+      newObject.Doing = false;
+      newObject.Completed = !newObject.Completed; 
+     }
+    // newObject[name] = !newObject[name];
+      let div = document.getElementsByClassName("list")
+      console.log(div[1].scrollHeight)
       setInputBars(newObject)
   }
   return (

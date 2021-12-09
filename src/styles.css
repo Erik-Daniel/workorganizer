@@ -4,16 +4,20 @@
     border-radius: 15px;
     background-color: gray;
     text-align: center;
-
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
 }
 .todoObject {
     background-color: red;
 }
 .list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+    
 }
 .item {
     width: 80%;
@@ -24,7 +28,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin: auto;
+    margin-top: 15px;
 
 }
 .mainContainer {
@@ -48,6 +53,7 @@ img:hover {
 }
 
 .inputBar {
+    
     animation: inputBarAnimation;
     animation-duration: 3s;
 }
